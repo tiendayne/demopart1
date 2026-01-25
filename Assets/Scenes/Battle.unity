@@ -122,6 +122,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &762155419 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3263320016605147011, guid: 1e0074f69052f3144b9d91971ed03272,
+    type: 3}
+  m_PrefabInstance: {fileID: 5550769541119343490}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &869883668
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,6 +377,7 @@ GameObject:
   - component: {fileID: 1224622107}
   - component: {fileID: 1224622106}
   - component: {fileID: 1224622105}
+  - component: {fileID: 1224622112}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -482,7 +489,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -564,8 +571,92 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1174891845}
+  - {fileID: 762155419}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1224622112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224622104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8815af0bca1aee4d8e63ae52c3ed817, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefabs: {fileID: 5131880996778885327, guid: 1e0074f69052f3144b9d91971ed03272,
+    type: 3}
+  shootingInterval: 0.1
+--- !u!1001 &5550769541119343490
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1224622111}
+    m_Modifications:
+    - target: {fileID: 3263320016605147011, guid: 1e0074f69052f3144b9d91971ed03272,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263320016605147011, guid: 1e0074f69052f3144b9d91971ed03272,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263320016605147011, guid: 1e0074f69052f3144b9d91971ed03272,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263320016605147011, guid: 1e0074f69052f3144b9d91971ed03272,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263320016605147011, guid: 1e0074f69052f3144b9d91971ed03272,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263320016605147011, guid: 1e0074f69052f3144b9d91971ed03272,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263320016605147011, guid: 1e0074f69052f3144b9d91971ed03272,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263320016605147011, guid: 1e0074f69052f3144b9d91971ed03272,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263320016605147011, guid: 1e0074f69052f3144b9d91971ed03272,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263320016605147011, guid: 1e0074f69052f3144b9d91971ed03272,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5131880996778885327, guid: 1e0074f69052f3144b9d91971ed03272,
+        type: 3}
+      propertyPath: m_Name
+      value: Machine Gun
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1e0074f69052f3144b9d91971ed03272, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

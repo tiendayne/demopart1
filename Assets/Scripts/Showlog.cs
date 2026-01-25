@@ -1,16 +1,14 @@
-using UnityEngine;  // Thêm dòng này để Unity nhận diện MonoBehaviour
+using UnityEngine;  
 
 public class ShowLog : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
+{    void Start()
     {
-        Debug.Log("Hello World!");  // In ra thông báo khi game bắt đầu
+        Debug.Log("Hello World!"); 
     }
 
-    // Update is called once per frame
+   
     void Update()
     {
-        Debug.Log("Update called! " + Time.frameCount);  // In ra số frame hiện tại
+        Debug.Log("Update called! " + Time.frameCount);  
     }
 }
